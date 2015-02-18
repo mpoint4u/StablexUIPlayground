@@ -14,7 +14,7 @@
 	
 	<!-- classpath, haxe libs -->
 	<source path="src" />
-	<source path="C:\Users\ps\Downloads\StablexUI-master\StablexUI-master\src" />
+	<!--<source path="C:\Users\ps\Downloads\StablexUI-master\StablexUI-master\src" />-->
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />
 	<haxelib name="hscript" />
