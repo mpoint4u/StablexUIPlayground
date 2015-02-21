@@ -14,11 +14,12 @@
 	
 	<!-- classpath, haxe libs -->
 	<source path="src" />
+	<source path="..\StablexUI\src" />
 	<!--<source path="C:\Users\ps\Downloads\StablexUI-master\StablexUI-master\src" />-->
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />
 	<haxelib name="hscript" />
-	<haxelib name="stablexui" />
+	<!--<haxelib name="stablexui" />-->
 	
 	<!-- assets -->
 	<icon path="assets/nme.svg" />
