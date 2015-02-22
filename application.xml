@@ -12,14 +12,23 @@
 	<window width="1024" height="480" unless="mobile" />
 	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
 	
-	<!-- classpath, haxe libs -->
+	<!-- classpath to my source -->
 	<source path="src" />
+	
+	<!-- IMPORTANT !!
+	<source path="to\my\fork\of\StablexUI\src" />
+		as seen below 
+		points to
+		https://github.com/mpoint4u/StablexUI/commits/master
+	-->
 	<source path="..\StablexUI\src" />
-	<!--<source path="C:\Users\ps\Downloads\StablexUI-master\StablexUI-master\src" />-->
+	
+	<!--<haxelib name="stablexui" />   ...not using the standard version here!! -->	
+	
+	<!-- all 'standard' active haxelib libraries in use -->
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />
 	<haxelib name="hscript" />
-	<!--<haxelib name="stablexui" />-->
 	
 	<!-- assets -->
 	<icon path="assets/nme.svg" />
