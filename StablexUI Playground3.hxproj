@@ -21,7 +21,7 @@
     <class path="src" />
     <class path="..\StablexUI\src" />
     <class path="C:\HaxeToolkit\haxe\lib\openfl\2,0,1\backends\native" />
-    <class path="bin\windows\neko\haxe" />
+    <class path="bin\windows\cpp\haxe" />
   </classpaths>
   <!-- Build options -->
   <build>
