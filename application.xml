@@ -14,15 +14,16 @@
 	
 	<!-- classpath to my source -->
 	<source path="src" />
+    <source path="../StablexUI/src" />
 	
 	<!-- IMPORTANT !!
 	<source path="to\my\fork\of\StablexUI\src" />
 		as seen below 
 		points to
 		https://github.com/mpoint4u/StablexUI/commits/master
-	-->
 	<source path="..\StablexUI\src" />
-	
+	-->
+
 	<!--<haxelib name="stablexui" />   ...not using the standard version here!! -->	
 	
 	<!-- all 'standard' active haxelib libraries in use -->
