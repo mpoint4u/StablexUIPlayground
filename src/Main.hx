@@ -70,9 +70,9 @@ class Main extends Sprite
 		#if flash
 		tf.text = example_xml_data;
 		#else
-		if (FileSystem.exists("first.xml"))
+		if (FileSystem.exists("ui.xml"))
 		{
-			tf.text = TextFileUtils.readTextFile("first.xml");
+			tf.text = TextFileUtils.readTextFile("ui.xml");
 		}
 		else
 		{
@@ -111,7 +111,7 @@ class Main extends Sprite
 		
 		#if !flash
 			var timer = new Timer(5000);
-			timer.run = function () { TextFileUtils.updateTextFile("first.xml", tf.text); };
+			timer.run = function () { TextFileUtils.updateTextFile("ui.xml", tf.text); };
 		#end
 	}
 	
