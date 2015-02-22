@@ -48,6 +48,7 @@ class Main extends Sprite
 	
 	public function new()
 	{
+		trace("called public function new() .. the constructor");
 		super();
 		
 		addEventListener(Event.ADDED_TO_STAGE, onAdded);
@@ -55,10 +56,12 @@ class Main extends Sprite
 	
 	private function onAdded(e:Event):Void 
 	{
+		trace("called private function onAdded(e:Event):Void ... ");
 		removeEventListener(Event.ADDED_TO_STAGE, onAdded);
 		
 		gui_container = new Draggable();
 		addChild(gui_container);
+		trace("called addChild(gui_container); .. ");
 		
 		tf = new TextField();
 		
@@ -114,23 +117,28 @@ class Main extends Sprite
 	
 	private function onResize(e:Event):Void 
 	{
+		trace("called private function onResize(e:Event):Void .. ");
 		Actuate.tween(tf, 1, { x:1, y:stage.stageHeight * 2 / 3, width:stage.stageWidth - 1, height:stage.stageHeight * 1 / 3 } );
 		Actuate.tween(debug_tf, 1, { width:stage.stageWidth } );
 	}
 	
 	public static function main() 
 	{		
+		trace("called public static function main() .. ");
 		UIBuilder.init(null, true);
 		Lib.current.addChild(new Main());
 	}
 	
 	private function onChange(e:Event):Void 
 	{
+		trace("called private function onChange(e:Event):Void .. ");
 		reloadGUI();
 	}
 	
 	private function reloadGUI()
 	{
+		trace("called private function reloadGUI() .. ");
+		
 		if (gui != null && gui.parent != null)
 		{
 			gui_container.removeChild(gui);
