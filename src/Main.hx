@@ -70,13 +70,15 @@ class Main extends Sprite
 		#if flash
 		tf.text = example_xml_data;
 		#else
-		if (FileSystem.exists("ui.xml"))
+		if (FileSystem.exists("first.xml"))
 		{
-			tf.text = TextFileUtils.readTextFile("ui.xml");
+			tf.text = TextFileUtils.readTextFile("first.xml");
 		}
 		else
 		{
-			tf.text = example_xml_data;
+			//tf.text = example_xml_data;
+			// TODO:  ... textfile does not get grabbed yet on Neko & Windows...
+			tf.text  = "..could not load first.xml";
 		}
 		#end
 
