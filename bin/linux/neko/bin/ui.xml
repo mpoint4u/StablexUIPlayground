@@ -3,5 +3,5 @@
         <Text text="'100px'" skin:Paint-color="0xff7777"/>
         <Text text="'2/3 of free space'" skin:Paint-color="0xAAAAff"/>
         <Text text="'1/3 of free space'" skin:Paint-color="0x77ff77"/>
-        <Text text="'10%'" skin:Paint-color="0xBBAAFF"/>
+        <Text text="'10%'" skin:Paint-color="0xBBAAeF"/>
     </Widget>
